@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Kalnia', sans-serif;
+  --primary-color: #2B1507; /* Darkbrown, earth like */
+  --secondary-color: #6B92D4; /* Lightblue/torquoise, sea like */
+  --accent-color: #4F824F; /* Green, nature like */
+  --neutral-color: #FAFAFA; /* Whiter, neutral like */
+  --text-color: #4D352B; /* Brown, earth like */
+  --background-color: #E7EEF7;
+  --container-bg: #f4f4f4;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,8 +19,62 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+* {
   margin: 0;
-  display: flex;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   place-items: center;
+  background: var(--background-color);
+}
+
+button {
+  font-family: 'Kalnia', sans-serif;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--accent-color);
+  color: var(--neutral-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.25rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.25rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 }

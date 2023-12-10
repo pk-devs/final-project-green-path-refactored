@@ -1,0 +1,72 @@
+.climate-news-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    margin: 8rem 2rem 2rem 2rem;
+}
+.climate-news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center;
+}
+
+.climate-news-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    height: 100%; 
+    transition: transform 0.3s ease;
+}
+
+.climate-news-article:hover {
+    transform: translateY(-0.25rem);
+}
+
+.climate-news-article h2 {
+    font-size: 2rem;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article-author, .article-description, .article-published {
+    margin: 10px 0;
+}
+
+.article-link {
+    display: block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%; 
+}
+
+.article-link:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .climate-news-heading {
+      font-size: 3rem;
+      margin: 1rem 2rem;
+      text-align: center;
+    }
+  }

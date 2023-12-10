@@ -1,0 +1,120 @@
+.resource-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  background-color: var(--container-bg);
+  padding: 1rem;
+  margin: 1rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+}
+
+.resource-item .content {
+  justify-content: center;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.resource-item .content h3 {
+  text-align: left;
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+  
+.resource-item p {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+  overflow-wrap: break-word;
+}
+  
+.resource-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.resource-item .add-subpath-button {
+  background-color: var(--accent-color);
+}
+
+.resource-item .add-subpath-button:hover {
+  background-color: var(--primary-color);
+}
+  
+.resource-item .mark-read-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  align-self: flex-end;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.resource-item .mark-read-button.completed-false:hover,
+.resource-item .mark-read-button.completed-true:hover {
+  background-color: var(--primary-color);
+}
+
+.resource-item .mark-read-button.completed-false {
+  background-color: grey;
+  color: white;
+}
+
+.resource-item .mark-read-button.completed-true {
+  background-color: darkgray;
+  color: white;
+}
+
+.remove-resource-button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .resource-item .mark-read-button {
+    position: static;
+    top: 20px;
+    align-self: center;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+@media (max-width: 900px) {
+  .resource-item {
+      margin: 1rem 1rem;
+      
+  }
+
+  .resource-item h2 {
+    text-align: center;  
+  }
+
+  .resource-item .content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .resource-item .content .add-subpath-button {
+    margin-top: 1rem;
+    width: auto;
+  }
+  .resource-item p {
+    margin: 1rem 1rem;
+    overflow-wrap: break-word;
+  }
+  .resource-item a {
+    margin: 1rem 1rem;
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,7 @@
+.button {
+    background-color: var(--accent-color);
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,46 @@
+.header {
+    position: relative;
+    height: 650px;
+    background-image: url("../assets/follow-paths.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    z-index: 2; 
+}
+
+.home-button {
+    z-index: 9999;
+    position: sticky;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header h1 {
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+

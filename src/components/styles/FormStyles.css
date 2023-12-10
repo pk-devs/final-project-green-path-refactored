@@ -1,0 +1,24 @@
+/* not used */
+.form-container {
+    background-color: var(--secondary-neutral-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+  
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.25rem;
+}
+

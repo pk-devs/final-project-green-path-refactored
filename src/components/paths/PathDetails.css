@@ -1,0 +1,25 @@
+.path-details {
+    justify-content: space-between;
+    padding: 2rem; 
+    margin-bottom: 2rem; 
+    width: 100%;
+    background-color: var(--box-background-color); 
+    border-radius: 0.5rem; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow-wrap: break-word;
+}
+
+.path-details h2 {
+    text-align: center; 
+    margin-bottom: 1rem; 
+    width: 90%;
+}
+
+.path-details p {
+    margin: 2rem 2rem; 
+    overflow-wrap: break-word;
+}
+
+.path-details-container {
+    width: 70%;
+}

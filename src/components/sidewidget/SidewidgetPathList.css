@@ -1,0 +1,23 @@
+.sidewidget-path-list h2 {
+  margin-bottom: 1rem;  
+  font-size: 2rem;  
+}
+
+.sidewidget-path-list a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    color: var(--accent-color);
+}
+
+.sidewidget-path-list a:hover {
+    color: var(--primary-color);
+}
+
+.path-title {
+  padding-left: 5px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400&display=swap');
+
+.form-container button {
+    background-color: var(--accent-color);
+    font-family: 'Kalnia', sans-serif;
+}
+.form-container button:hover {
+    background-color: var(--primary-color);
+}
