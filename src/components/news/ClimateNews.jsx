@@ -34,11 +34,12 @@ export const ClimateNews = () => {
     if(loading) return <p>Getting the news for you...</p>
     if(error) return <p>Something went wrong: {error}</p>
 
+    console.log (articles)
     return (
         <div>
         <h2 className="climate-news-heading">News abount climate change</h2>
             <div className="climate-news-container">
-                {articles.map(article => (
+                {Array.isArray(articles) && articles.map(article => (
                     <div key={article.title} className="climate-news-article">
                         <div>
                             {article.urlToImage && (
