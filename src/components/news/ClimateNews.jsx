@@ -37,7 +37,7 @@ export const ClimateNews = () => {
     console.log (articles)
     return (
         <div>
-        <h2 className="climate-news-heading">News abount climate change</h2>
+        <h2 className="climate-news-heading">News about climate change</h2>
             <div className="climate-news-container">
                 {Array.isArray(articles) && articles.map(article => (
                     <div key={article.title} className="climate-news-article">
