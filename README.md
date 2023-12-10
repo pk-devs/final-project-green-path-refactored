@@ -3,13 +3,13 @@
 
 ## 1. What is this?
 
-This is a the debut project done for Technigo course called The Green Path. The website is focused around climate change. The website provides possibility to follow paths on how to fight climate change. Users can also create their own paths and add resources and create new sub-paths.
+This is my first ever website built and it is for the final project in a course at Technigo. The project is called The Green Path. The website is focused around climate change. The website provides possibility to follow paths on how to fight climate change. Users can also create their own paths and add resources and create new sub-paths.
 
 ## 2. What did I do?
 
-I started with trying to map out all components that I would need to build the app. I realized that I should have done more planning. I used Redux DevTools a lot, A LOT. To debug store management, find components etc. I tested the API endpoint with Postman to see how the data was structured. 
+I started with trying to map out all components that I would need to build the app. I realized that I should have done more planning. I used Redux DevTools a lot, A LOT. To debug store management, find components etc. I tested the API endpoint with Postman to see how the data was structured.
 
-If I had more time I would focus on adding functionality to create a new path from a sub-path. Fetching already the information from the global store and once the new path is created I would have a sidewidget to see where the path originated from and other sub-paths created from the same path. Of course, also I would implement node.js so I could store all data in a db so it does not disappear on refresh :) on ting at the time hehe. 
+If I had more time I would focus on adding functionality to create a new path from a sub-path. Fetching already the information from the global store and once the new path is created I would have a sidewidget to see where the path originated from and other sub-paths created from the same path. Of course, also I would implement node.js so I could store all data in a db so it does not disappear on refresh, one ting at the time :)
 
 ## 3. Where can you see it in action?
 
