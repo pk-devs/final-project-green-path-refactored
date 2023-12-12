@@ -6,7 +6,7 @@ import { Header } from "./components/Header"
 import { Path } from "./components/paths/Path"
 
 export const App = () => {
-  return (
+    return (
         <Provider store={store}>
             <Router>
             <Header />
