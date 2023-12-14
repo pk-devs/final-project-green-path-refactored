@@ -3,7 +3,7 @@ import "./SidewidgetNews.css"
 
 export const SidewidgetNews = () => {
   const { articles } = useSelector(state => state.api)
-    
+    console.log(" Does it work?:", articles)
   return (
     <div className="sidewidget-news">
         <h2>News about climate change</h2>

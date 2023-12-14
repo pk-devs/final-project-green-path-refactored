@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { toggleSubPathCompleted } from "../../redux/reducers/pathSlice"
+import { toggleSubPathCompleted } from "../../../reducers/pathSlice"
 import "./SubPathItem.css"
 
 export const SubPathItem = ({ subPath, pathId, resourceId }) => {

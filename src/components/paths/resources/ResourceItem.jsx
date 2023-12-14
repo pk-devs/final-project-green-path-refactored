@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { removeResource, toggleResourceCompleted } from "../../redux/reducers/pathSlice"
+import { removeResource, toggleResourceCompleted } from "../../../reducers/pathSlice"
 import { AddSubPath } from "../AddSubPath"
 import { SubPathList } from "../subpaths/SubPathList"
 import "./ResourceItem.css"

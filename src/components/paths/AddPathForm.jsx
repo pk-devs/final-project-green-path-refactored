@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { addPath, resetLastAddedPathId } from "../redux/reducers/pathSlice"
+import { addPath, resetLastAddedPathId } from "../../reducers/pathSlice"
 import "../styles/FormStyles.css"
 
 export const AddPathForm = () => {

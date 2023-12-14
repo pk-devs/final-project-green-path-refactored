@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addSubPath } from "../redux/reducers/pathSlice"
+import { addSubPath } from "../../reducers/pathSlice"
 import "./AddSubPath.css"
 
 export const AddSubPath = ({ parentPathId, resourceIndex }) => {

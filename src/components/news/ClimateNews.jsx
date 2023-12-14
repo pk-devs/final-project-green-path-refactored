@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { isLoading, fetchedArticles, apiError } from "../redux/reducers/apiSlice"
+import { isLoading, fetchedArticles, apiError } from "../../reducers/apiSlice"
 import { useDispatch, useSelector } from "react-redux"
 import "./ClimateNews.css"
 
@@ -17,24 +17,28 @@ export const ClimateNews = () => {
     useEffect(() => {
         dispatch(isLoading(true))
         fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data.articles) // check to verify data
-                dispatch(fetchedArticles(data.articles))
-                dispatch(isLoading(false))
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("No connection")
+                }
+                return response.json()
             })
+            .then(data => {
+             if(data.articles && Array.isArray(data.articles)) {
+                dispatch(fetchedArticles(data.articles))
+             } else {
+                throw new Error("Data format is wrong")
+             }
+             })
             .catch(error => {
                 dispatch(apiError(error.message))
                 dispatch(isLoading(false))
             })
     }, [dispatch, url])
 
-    console.log()
-
     if(loading) return <p>Getting the news for you...</p>
     if(error) return <p>Something went wrong: {error}</p>
 
-    console.log (articles)
     return (
         <div>
         <h2 className="climate-news-heading">News about climate change</h2>

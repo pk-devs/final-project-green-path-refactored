@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { addResource } from "../../redux/reducers/pathSlice"
+import { addResource } from "../../../reducers/pathSlice"
 import "./ResourceForm.css"
 
 export const ResourceForm = ({ pathId }) => {

@@ -9,7 +9,7 @@ export const SidewidgetPathList = () => {
     <div className="sidewidget-path-list">
       <h2>Other paths</h2>
       <ul>
-        {paths.map((path) => (
+        {paths?.map((path) => (
          <Link key={path.id} to={`/path/${path.id}`}> 
             <li className="path-title">
               {path.question}
