@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 import "./SidewidgetPathList.css"
 
 export const SidewidgetPathList = () => {
-  const paths = useSelector((state) => state.paths.items)
-
+  const paths = useSelector((state) => state.paths.items) 
+  console.log("this is from SidewiggetPathList:", paths)
   return (
     <div className="sidewidget-path-list">
       <h2>Other paths</h2>

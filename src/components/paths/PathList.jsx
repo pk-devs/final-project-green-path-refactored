@@ -20,6 +20,8 @@ export const PathList = () => {
     return filterMatch && searchMatch
   })
 
+    console.log("From PAthList:", filteredPaths)  
+  
   return (
     <div className="parent-list-paths">
       <h2 className="list-paths-heading">Explore the paths, add your resources to deep dive</h2>
