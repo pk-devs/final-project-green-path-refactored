@@ -22,12 +22,3 @@ export const store = configureStore({
 })
 
 export const persistor = persistStore(store)
-
-// old code 
-
-// const reducer = combineReducers({
-//     paths: pathsReducer,
-//     api: apiReducer
-//   })
-  
-// export const store = configureStore({ reducer: reducer })
