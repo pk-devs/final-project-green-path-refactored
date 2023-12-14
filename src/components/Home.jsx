@@ -7,7 +7,6 @@ export const Home = () => {
     <div className="home-container">
         <PathList />
         <ClimateNews />
-        <h1>HardCoded:</h1>
         <ClimateNewsHardCoded />
     </div>
   )
