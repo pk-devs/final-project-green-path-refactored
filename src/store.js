@@ -23,7 +23,7 @@ export const store = configureStore({
 
 export const persistor = persistStore(store)
 
-// My own code 
+// old code 
 
 // const reducer = combineReducers({
 //     paths: pathsReducer,
