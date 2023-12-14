@@ -10,6 +10,8 @@ import "./Path.css"
 export const Path = () => {
     const { pathId } = useParams()
     const path = useSelector(state => state.paths.items.find(path => path.id === pathId))
+    console.log('Path ID:', pathId)
+    console.log('Found Path:', path)
     const [showAddSubPath, setShowAddSubPath] = useState({})
     const dispatch = useDispatch()
 
