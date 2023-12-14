@@ -7,7 +7,7 @@ export const pathSlice = createSlice ({
         lastAddedPathId: null,
         items: [
             {
-                id: uuidv4,
+                id: uuidv4(),
                 question: "How to build solar panels on villas?",
                 description: "Installing solar panels is the first step toward a greener future. In fact, by doing so, you are already in line with the UN's sustainable development goals of clean energy and climate action.",
                 tags: ["Renewable energy"],
