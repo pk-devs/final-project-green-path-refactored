@@ -29,6 +29,7 @@ export const ClimateNews = () => {
              } else {
                 throw new Error("Data format is wrong")
              }
+             console.log(data.articles)
              })
             .catch(error => {
                 dispatch(apiError(error.message))

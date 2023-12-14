@@ -20,7 +20,7 @@ export const PathList = () => {
     return filterMatch && searchMatch
   })
 
-    console.log("From PAthList:", filteredPaths)  
+    console.log("From PathList:", filteredPaths)  
   
   return (
     <div className="parent-list-paths">

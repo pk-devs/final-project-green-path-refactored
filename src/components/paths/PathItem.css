@@ -29,7 +29,7 @@
 .path-item a {
     display: block;
     background-color: var(--accent-color);
-    color: white;
+    color: black;
     padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
@@ -40,6 +40,7 @@
 
 .path-item a:hover {
     background-color: var(--primary-color);
+    color: white;
 }
 
 @media (max-width: 768px) {
